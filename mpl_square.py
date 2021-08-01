@@ -1,5 +1,7 @@
 import matplotlib.pyplot as plt 
 
+plt.style.use('fivethirtyeight')# wybranie stylu
+
 input_values = [1, 2, 3, 4, 5]
 squares = [1, 4, 9, 16, 25] # lista
 fig, ax = plt.subplots()
