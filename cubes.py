@@ -18,4 +18,6 @@ ax.tick_params(axis='both', labelsize = 14)
 
 ax.plot(xs, ys, linewidth=2)
 
+ax.axis([0, 5, 0, 125])
+
 plt.show()
