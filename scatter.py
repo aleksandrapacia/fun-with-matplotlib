@@ -4,7 +4,7 @@ x_values = range(1, 201)
 y_values = [x**2 for x in x_values]
 plt.style.use('fivethirtyeight')
 fig, ax = plt.subplots()
-ax.scatter(x_values, y_values,c=(0, 0.5, 0), s=10)
+ax.scatter(x_values, y_values,c=y_values, cmap=plt.cm.Greens, s=10)
 
 # tytuł wiersza
 ax.set_title('Kwadraty liczb', fontsize=28)
@@ -16,5 +16,5 @@ ax.tick_params(axis='both', labelsize=8)
 
 ax.axis([0, 200, 0, 40000])
 
-
+plt.savefig('squares_plot.png')
 plt.show()
