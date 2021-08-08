@@ -9,8 +9,11 @@ while True:
     fig, ax = plt.subplots()
     point_numbers = range(rndm.numberOfPoints)
     ax.scatter(rndm.xs, rndm.ys, c=point_numbers, cmap=plt.cm.Blues, edgecolor='none',s=15)
-    ax.scatter(0, 0, c='green', edgecolors='none', s=10)
-    ax.scatter(rndm.xs[-1], rndm.ys[-1], c='red', edgecolors='none', s=10)
+    ax.scatter(0, 0, c='green', edgecolors='none', s=60)
+    ax.scatter(rndm.xs[-1], rndm.ys[-1], c='red', edgecolors='none', s=60)
+
+    ax.get_xaxis().set_visible(False)
+    ax.get_yaxis().set_visible(False)
     plt.show()
     
 
