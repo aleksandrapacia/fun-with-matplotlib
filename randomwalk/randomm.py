@@ -9,8 +9,8 @@ class RandomWalk():  # page/407
     def walkk(self):
         while len(self.xs) < self.numberOfPoints:
 
-            x_direction = choice([1, -1]) # 1: right / -1: left
-            x_distance = choice([0, 1, 2, 3, 4])
+            x_direction = choice([1,2,3]) # 1: right / -1: left
+            x_distance = choice([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11])
             x_step = x_direction * x_distance
 
             y_direction = choice([1, -1])
